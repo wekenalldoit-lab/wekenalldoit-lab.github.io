@@ -63,9 +63,7 @@ function setupEventListeners() {
   }
   
   // Contact form
-  if (elements.contactForm) {
-    elements.contactForm.addEventListener('submit', handleFormSubmit);
-  }
+
   
   // Modal events
   if (elements.closeModal) {
