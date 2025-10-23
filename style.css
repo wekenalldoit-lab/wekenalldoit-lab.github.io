@@ -1209,6 +1209,17 @@ body {
   gap: var(--spacing-xs);
 }
 
+.portfolio-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .tag {
   background-color: rgba(0, 212, 255, 0.1);
   color: var(--primary-teal);
