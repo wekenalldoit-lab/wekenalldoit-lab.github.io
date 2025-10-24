@@ -1798,6 +1798,27 @@ body {
   background: var(--primary-teal);
 }
 
+.footer {
+  width: 100%;
+  background: #fff; /* Or use your base bg color */
+  padding: 32px 0 26px 0;
+  margin-top: 40px;
+  border-top: 1.5px solid #f0f3f6;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.04);
+}
+
+.footer-content {
+  text-align: center;
+  color: #222a34;
+  font-size: 1.09rem;
+  letter-spacing: 0.01em;
+  line-height: 1.44;
+}
+
+.footer-content div {
+  margin: 4px 0;
+}
+
 /* Back to Top Button */
 .back-to-top {
   position: fixed;
