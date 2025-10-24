@@ -1690,7 +1690,7 @@ body {
 /* Certifications Section */
 .certifications-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     justify-items: center;
     align-items: start;
@@ -1704,10 +1704,10 @@ body {
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: all 0.3s;
     width: 100%;
-    max-width: 400px;    /* Ensures they don't get too wide */
+    max-width: 400px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -1716,7 +1716,7 @@ body {
 
 .certification-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
 .certification-image {
@@ -1754,6 +1754,7 @@ body {
     color: #666;
 }
 
+/* Switch to stacked on mobile */
 @media (max-width: 800px) {
     .certifications-grid {
         grid-template-columns: 1fr;
