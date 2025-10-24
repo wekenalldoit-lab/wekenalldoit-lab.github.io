@@ -1689,79 +1689,79 @@ body {
 
 /* Certifications Section */
 .certifications-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
-    justify-items: center;
-    align-items: start;
     margin-top: 2rem;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .certification-card {
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-    transition: all 0.3s;
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s, transform 0.3s;
+    width: 340px;
+    max-width: 92vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .certification-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.13);
 }
 
 .certification-image {
     width: 100%;
     display: flex;
     justify-content: center;
+    background: #f7f7f7;
 }
 
 .certification-image img {
     width: 100%;
+    max-width: 320px;
     height: auto;
-    max-height: 220px;
-    max-width: 380px;
     object-fit: contain;
     display: block;
     margin: 0 auto;
-    background: #f7f7f7;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
 }
 
 .certification-info {
-    padding: 1.2rem 0 0.8rem 0;
+    padding: 1.25rem;
     text-align: center;
 }
 
 .certification-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
 }
 
 .certification-issuer,
 .certification-date {
-    font-size: 1rem;
+    font-size: 0.99rem;
     color: #666;
+    margin-bottom: 0.15rem;
 }
 
-/* Switch to stacked on mobile */
+/* Responsive: stack on mobile */
 @media (max-width: 800px) {
     .certifications-grid {
-        grid-template-columns: 1fr;
-        max-width: 99vw;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.4rem;
     }
     .certification-card {
-        max-width: 99vw;
+        width: 95vw;
+        max-width: 98vw;
+    }
+    .certification-image img {
+        max-width: 90vw;
     }
 }
 
