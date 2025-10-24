@@ -993,17 +993,14 @@ body {
 }
 
 @media (max-width: 900px) {
-}
-
-.hero-flex {
+  .hero-flex {
     flex-direction: column;
     gap: 24px;
     text-align: center;
-}
-
+  }
   .hero-content-col {
     text-align: center;
-
+  }
 }
 
 @keyframes float {
