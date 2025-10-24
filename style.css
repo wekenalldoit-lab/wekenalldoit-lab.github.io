@@ -1689,11 +1689,15 @@ body {
 
 /* Certifications Section */
 .certifications-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: start;
     margin-top: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .certification-card {
@@ -1703,7 +1707,7 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     width: 100%;
-    max-width: 420px;   /* Cap maximum certificate card width */
+    max-width: 400px;    /* Ensures they don't get too wide */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -1725,10 +1729,12 @@ body {
     width: 100%;
     height: auto;
     max-height: 220px;
-    max-width: 400px;   /* Makes image a bit smaller */
+    max-width: 380px;
     object-fit: contain;
     display: block;
     margin: 0 auto;
+    background: #f7f7f7;
+    border-radius: 8px;
 }
 
 .certification-info {
@@ -1748,13 +1754,13 @@ body {
     color: #666;
 }
 
-/* Responsive for mobile */
-@media (max-width: 600px) {
-    .certification-card {
-        max-width: 98vw;
+@media (max-width: 800px) {
+    .certifications-grid {
+        grid-template-columns: 1fr;
+        max-width: 99vw;
     }
-    .certification-image img {
-        max-width: 95vw;
+    .certification-card {
+        max-width: 99vw;
     }
 }
 
