@@ -1711,7 +1711,7 @@ body {
 .certification-image img {
     width: 100%;
     height: auto;
-    max-height: 400px;
+    max-height: 250px;
     object-fit: contain;
     display: block;
 }
@@ -1721,8 +1721,7 @@ body {
 }
 
 .certification-title {
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1.5rem;    font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
