@@ -1763,20 +1763,6 @@ body {
   font-style: italic;
 }
 
-.footer-social {
-  display: flex;
-  gap: var(--spacing-md);
-}
-
-.footer .social-link {
-  background: rgba(255, 255, 255, 0.1);
-  color: var(--primary-white);
-}
-
-.footer .social-link:hover {
-  background: var(--primary-teal);
-}
-
 .footer {
   width: 100%;
   background: #fff; /* Or use your base bg color */
