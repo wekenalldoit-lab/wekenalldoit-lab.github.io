@@ -1694,17 +1694,31 @@ body {
   gap: var(--spacing-xl);
 }
 
+/* Make the whole card clickable */
+.certification-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.certification-card-link:focus .certification-card,
+.certification-card-link:hover .certification-card {
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+/* Card styling (reuse education-card for unified design) */
+.education-card,
 .certification-card {
   background: var(--primary-white);
   padding: var(--spacing-xl);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-md);
   transition: var(--transition-normal);
-  /* Optionally: */
-  cursor: pointer; /* makes it feel clickable even if it's not */
 }
 
-.certification-card:hover {
+.certification-card:hover,
+.education-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-xl);
 }
