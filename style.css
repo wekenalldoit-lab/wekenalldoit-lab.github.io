@@ -1693,15 +1693,20 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: var(--spacing-xl);
 }
+
 .certification-card {
   background: var(--primary-white);
   padding: var(--spacing-xl);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-md);
   transition: var(--transition-normal);
+  /* Optionally: */
+  cursor: pointer; /* makes it feel clickable even if it's not */
 }
+
 .certification-card:hover {
-  transform: translateY(-5px); box-shadow: var(--shadow-xl);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
 }
 
 /* Footer */
