@@ -1723,6 +1723,19 @@ body {
   box-shadow: var(--shadow-xl);
 }
 
+.certification-image img {
+  width: 100%;
+  max-width: 350px;       /* Make this less than the card's width/padding */
+  max-height: 220px;       /* Controls tall certificates, adjust as needed */
+  height: auto;
+  object-fit: contain;
+  background: #f8fafd;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  display: block;
+  margin: 0 auto;
+}
+
 /* Footer */
 .footer {
   background-color: var(--primary-navy);
