@@ -1769,21 +1769,22 @@ body {
 
 .btn-social {
   display: inline-block;
-  background: #323946;
+  background: #10d4ff;        /* bright cyan background */
   color: #fff;
   font-weight: 500;
-  padding: 0.88em 2.2em;
-  margin: 6px 16px 0 0;
+  padding: 1em 2.8em;
+  margin: 6px 18px 0 0;
   border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(16,181,232, 0.08);
-  font-size: 1.1rem;
+  font-size: 1.18rem;
+  text-align: center;
   text-decoration: none;
   border: none;
-  transition: background 0.18s, box-shadow 0.21s;
+  box-shadow: 0 1px 8px rgba(16,181,232, 0.09);
+  transition: background 0.19s;
 }
 .btn-social:hover,
 .btn-social:focus {
-  background: #10b5e8;
+  background: #11bde0;       /* slightly darker on hover */
   color: #fff;
 }
 
