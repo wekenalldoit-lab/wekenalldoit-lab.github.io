@@ -1733,14 +1733,16 @@ body {
 }
 
 /* Footer */
-.footer,
-.footer-dark {
+.footer, .footer-dark {
+  width: 100vw;         /* Force full viewport width */
+  left: 0;
+  margin-left: calc(50% - 50vw); /* Center full-width on any screen */
   background: #1b2230;
   color: #fff;
-  padding: 46px 0 38px 0;
-  border-top: none;
   box-shadow: none;
   text-align: center;
+  padding: 46px 0 38px 0;
+  border-top: none;
 }
 
 .footer-text p {
