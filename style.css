@@ -1029,19 +1029,17 @@ body {
 }
 
 .hero-subtitle {
-  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-  font-weight: var(--font-weight-medium);
-  margin-bottom: var(--spacing-lg);
-  opacity: 0.9;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #e6f0ff;  /* Light blue-white */
+  margin-bottom: 12px;
+  line-height: 1.4;
 }
 
 .hero-tagline {
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  margin-bottom: var(--spacing-xl);
-  opacity: 0.8;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.1rem;
+  color: #d1e3f5;  /* Lighter color for readability */
+  margin-bottom: 28px;
 }
 
 .hero-buttons {
