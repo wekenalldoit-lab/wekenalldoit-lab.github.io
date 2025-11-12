@@ -1357,18 +1357,21 @@ body {
 }
 
 .skill-bar {
+  width: 100%;
   height: 8px;
-  background-color: var(--border-color);
-  border-radius: var(--radius-sm);
+  background: #ecf0f6;
+  border-radius: 7px;
   overflow: hidden;
+  margin-top: 5px;
+  margin-bottom: 24px;
 }
-
 .skill-progress {
+  display: block;
   height: 100%;
-  background: var(--gradient-cta);
-  width: 0;
-  transition: width 2s ease-in-out;
-  border-radius: var(--radius-sm);
+  background: linear-gradient(90deg, #10b5e8 60%, #39e2e0 100%);
+  border-radius: 7px;
+  width: 0; /* Or remove width from CSS to allow JS to set it */
+  transition: width 0.9s;
 }
 
 .tools-grid {
